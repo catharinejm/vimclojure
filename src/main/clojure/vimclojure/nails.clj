@@ -26,7 +26,8 @@
                  [util :as util]
                  [backend :as backend]))
   (:import
-     com.martiansoftware.nailgun.NGContext))
+     com.martiansoftware.nailgun.NGContext
+     [java.io BufferedReader]))
 
 (defmacro defnail
   "Define a new Nail of the given name. The arguments is a command line
